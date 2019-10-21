@@ -32,7 +32,7 @@ boxplot(ages, horizontal = TRUE)
 stripchart(ages, method = "stack", add = TRUE)
 summary(ages)
 
-# Lesson 3 ----
+
 
 exam <- read.table("Files/exam_results.txt", header = TRUE)  
 scores <- exam$scores
@@ -130,6 +130,8 @@ manipulate(
   n     = slider(2, 500, step = 1, initial = 100),
   alpha = slider(0.01, 0.1, step = 0.01, initial = 0.05)
 )
+
+# Lesson 3 ----
 
 runif(n=10)
 uniform_dice <- round(runif(n=100000, min=0.5, max=6.5))
